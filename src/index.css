@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #fff;
+  background: #111;
+}
+
+.navbar {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link {
+  color: #f0f0f0 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #00aaff !important;
+}
+
+section {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Background Images from Unsplash */
+#home {
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+}
+#about {
+  background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover no-repeat;
+}
+#skills {
+  background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c") center/cover no-repeat;
+}
+#projects {
+  background: url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7") center/cover no-repeat;
+}
+#certificates {
+  background: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b") center/cover no-repeat;
+}
+#resume {
+  background: url("https://i.pinimg.com/736x/a1/ec/50/a1ec50bf8d078c663502d5b1d218da7f.jpg") center/cover no-repeat;
+}
+#contact {
+  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d") center/cover no-repeat;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00ccff;
+}
+p {
+  color: #e0e0e0;
+}
+
+.btn-primary {
+  background-color: #00aaff;
+  border: none;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background-color: #0088cc;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+footer {
+  background: #000;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+}
+.card-img-top:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
